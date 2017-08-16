@@ -1,0 +1,96 @@
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<body>
+<style>
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+</style>
+<div ng-app="">
+<div>
+<p><b>Java:</b>
+<select ng-model="wp">
+<option value="topics">topics
+<option value="codes">codes
+</select>
+
+</p>
+
+
+<div ng-switch="wp">
+ <div ng-switch-when="topics">
+<ol>
+Updated Soon (Click on codes)
+</ol>
+</ol>
+</div>
+<div ng-switch-when="codes">
+<form>
+ <input type="radio" ng-model="myVar" value="Threading">Threading
+ </form>
+ <div ng-switch="myVar">
+  <div ng-switch-when="Threading">
+  <ol>
+  <li><a href="F:\JAVA\e\rachit's documents\java\java files\college\Advanced\Thread\Ex-1.java">Thread Example by Extending Thread Class</a></li>
+  <li><a href="F:\JAVA\e\rachit's documents\java\java files\college\Advanced\Thread\Ex-2.java">Thread Example by implementing Runnable interface</a></li>
+  <li><a href="F:\JAVA\e\rachit's documents\java\java files\college\Advanced\Thread\2.java">MultiThreading using Synchronization</a></li>
+  <li><a href="F:\JAVA\e\rachit's documents\java\java files\college\Advanced\Thread\3.java">MultiThreading without Synchronization</a></li>
+  <li><a href="F:\JAVA\e\rachit's documents\java\java files\college\Advanced\Thread\Ex-3.java">A.)Without Synchronization-2</a></li>
+  <li><a href="F:\JAVA\e\rachit's documents\java\java files\college\Advanced\Thread\Ex-4.java">B.)With Synchronization</a></li>
+  <li><a href="F:\JAVA\e\rachit's documents\java\java files\college\Advanced\Thread\Ex-5.java">A.)With Synchronization</a></li>
+  <li><a href="F:\JAVA\e\rachit's documents\java\java files\college\Advanced\Thread\6.java">Join() Example</a></li>
+  <li><a href="F:\JAVA\e\rachit's documents\java\java files\college\Advanced\Thread\8.java">no method synchronized</a></li>
+<li><a href="F:\JAVA\e\rachit's documents\java\java files\college\Advanced\Thread\9.java">method synchronized</a></li>
+<li><a href="F:\JAVA\e\rachit's documents\java\java files\college\Advanced\Thread\9.java">synchronized method with anonymous class</a></li>
+<li><a href="F:\JAVA\e\rachit's documents\java\java files\college\Advanced\Thread\11.java">Interthread Communication in java</a></li>
+<li><a href="F:\JAVA\e\rachit's documents\java\java files\college\Advanced\Thread\12.java">Re-Entrant Monitor</a></li>
+<li><a href="F:\JAVA\e\rachit's documents\java\java files\college\Advanced\Thread\13.java">Deadlock</a></li>
+<li><a href="F:\JAVA\e\rachit's documents\java\java files\college\Advanced\Thread\14.java">Deadlocked solved</a></li>
+<li><a href="F:\JAVA\e\rachit's documents\java\java files\college\Advanced\Thread\15.java">Daemon thread Ex</a></li>
+<li><a href="F:\JAVA\e\rachit's documents\java\java files\college\Advanced\Thread\16.java">Exception in Daemon thread(no)</a></li>
+<li><a href="F:\JAVA\e\rachit's documents\java\java files\college\Advanced\Thread\17.java">Name, Priority, which thread is alive, using multiple threads </a></li>
+<li><a href="F:\JAVA\e\rachit's documents\java\java files\college\Advanced\Thread\18.java">Message through threads</a></li>
+<li><a href="F:\JAVA\e\rachit's documents\java\java files\college\Advanced\Thread\19.java">Manage bank account through threads</a></li>
+<li><a href="F:\JAVA\e\rachit's documents\java\java files\college\Advanced\Thread\20.java">Find prime number using threads</a></li>
+<li><a href="F:\JAVA\e\rachit's documents\java\java files\college\Advanced\Thread\21.java">Even Odd using thread</a></li>
+<li><a href="F:\JAVA\e\rachit's documents\java\java files\college\Advanced\Thread\23.java">Synchronized method for bank account</a></li>
+<li><a href="F:\JAVA\e\rachit's documents\java\java files\college\Advanced\Thread\22.java">Factorial using thread</a></li>
+<li><a href="F:\JAVA\e\rachit's documents\java\java files\college\Advanced\Thread\25.java">Factorial using thread with synchronized method</a></li>
+<li><a href="F:\JAVA\e\rachit's documents\java\java files\college\Advanced\Thread\24.java">Perfect number using thread</a></li>
+<li><a href="F:\JAVA\e\rachit's documents\java\java files\college\Advanced\Thread\26.java">Perfect number using thread with synchronized method</a></li>
+<li><a href="F:\JAVA\e\rachit's documents\java\java files\college\Advanced\Thread\27.java">Leap Year using thread</a></li>
+<li><a href="F:\JAVA\e\rachit's documents\java\java files\college\Advanced\Thread\28.java">Number is divisible by 7 or not using thread</a></li>
+<li><a href="F:\JAVA\e\rachit's documents\java\java files\college\Advanced\Thread\29.java">Upper and lower case using threads</a></li>
+<li><a href="F:\JAVA\e\rachit's documents\java\java files\college\Advanced\Thread\30.java">Vowel and consonant using thread</a></li>
+<li><a href="F:\JAVA\e\rachit's documents\java\java files\college\Advanced\Thread\31.java">Length of strings using thread</a></li>
+<li><a href="F:\JAVA\e\rachit's documents\java\java files\college\Advanced\Thread\32.java">Sum of even numbers using threads</a></li>
+<li><a href="F:\JAVA\e\rachit's documents\java\java files\college\Advanced\Thread\36.java">Sum of even numbers using threads without synchronization</a></li>
+<li><a href="F:\JAVA\e\rachit's documents\java\java files\college\Advanced\Thread\34.java">Square of numbers from 1 to 100 without synchronization</a></li>
+<li><a href="F:\JAVA\e\rachit's documents\java\java files\college\Advanced\Thread\33.java">Square of numbers from 1 to 100 with synchronization</a></li>
+<li><a href="F:\JAVA\e\rachit's documents\java\java files\college\Advanced\Thread\35.java">Thread count</a></li>
+
+</ol>
+  </div>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+</body>
+</html>
