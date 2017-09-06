@@ -1,49 +1,14 @@
+<!DOCTYPE html>
 <html>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 <body>
-<style>
-a:link {
-    color: red;
-}
 
-/* visited link */
-a:visited {
-    color: green;
-}
-
-/* mouse over link */
-a:hover {
-    color: hotpink;
-}
-
-/* selected link */
-a:active {
-    color: blue;
-}
-</style>
 <div ng-app="">
-<div>
-<p><b>Java:</b>
-<select ng-model="wp">
-<option value="topics">topics
-<option value="codes">codes
-</select>
-
-</p>
-
-
-<div ng-switch="wp">
- <div ng-switch-when="topics">
-<ol>
-Updated Soon (Click on codes)
-</ol>
-</ol>
-</div>
-<div ng-switch-when="codes">
-<form>
- <input type="radio" ng-model="myVar" value="Threading">Threading
- </form>
- <div ng-switch="myVar">
+  <form>
+    Threading
+    <input type="radio" ng-model="myVar" value="Threading">
+  </form>
+  <div ng-switch="myVar">
   <div ng-switch-when="Threading">
   <ol>
   <li><a href="Ex-1.java">Thread Example by Extending Thread Class</a></li>
@@ -85,12 +50,53 @@ Updated Soon (Click on codes)
 <li><a href="35.java">Thread count</a></li>
 
 </ol>
+</div>
   </div>
-  </div>
-</div>
-</div>
-</div>
+    <div style="position:absolute; top:10px;left:130px">
+	 <form>
+    Collection
+    <input type="radio" ng-model="myVar" value="Collection">
+  </form>
+  <div ng-switch="myVar">
+  <div ng-switch-when="Collection">
+  <ol>
+  <li><a href="C1.java">ArrayListEx</a></li>
+<li><a href="C2.java">Array list with user defined class</a></li>
 
-</div>
+<li><a href="C3.java">addAll method</a></li>
+
+<li><a href="C4.java">removeAll method</a></li>
+<li><a href="C5.java">retainAll Method</a></li>
+
+<li><a href="C6.java">Book Example</a></li>
+<li><a href="C7.java">Generic Ex</a></li>
+<li><a href="C8.java">Generic using map</a></li>
+<li><a href="C9.java">Generic method(E)</a></li>
+<li><a href="C10.java">Wildcard in java</a></li>
+<li><a href="C11.java">ArratLIst and LinkList</a></li>
+<li><a href="C12.java">Iterator and enumeration</a></li>
+<li><a href="C13.java">Hashset</a></li>
+<li><a href="C14.java">Duplicate element in Hashset</a></li>
+<li><a href="C15.java">Hashset3</a></li>
+<li><a href="C16.java">Java Dictionary using Collection</a></li>
+<li><a href="C17.java">Program showing Advantage of using collection</a></li>
+<li><a href="C18.java">sort Integer array using Arrays.sort </a></li>
+<li><a href="C19.java">sort Integer array by using Arrays.sort</a></li>
+<li><a href="C20.java">sort Employee array using Arrays.sort in ascending order on basis of name and id by implementing Comparator interface in java</a></li>
+<li><a href="C21.java"> to understand Comparator of superclass can be used by subclasses in java</a></li>
+<li><a href="C22.java">Sort Set by using TreeSet</a></li>
+<li><a href="C23.java">Sort Set in Ascending order by using TreeSet and implementing Comparable interface</a></li>
+   
+  </ol>
+  
+  </div>
+  </div>
+  </div>
+    
+  
+
+  </div>
+
+
 </body>
 </html>
